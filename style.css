@@ -7,6 +7,15 @@
     box-sizing: border-box;
     font: 'Poppins', sans-serif;
 }
+
+#iconGirl{
+    max-width: 700px; /* Image won’t exceed 300px in width */
+  height: auto;
+}
+#iconHook{
+    max-width: 100px; /* Image won’t exceed 300px in width */
+  height: auto;
+}
 .navbar {
     font-family: 'Poppins', sans-serif;
 }
