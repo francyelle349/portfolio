@@ -96,7 +96,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 portfolio.textContent = 'Portfolio';
                 skills.textContent = 'Skills';
                 myArticles.textContent = 'articles';
-                heading.textContent = 'Full-Stack Software Engineer';
+                heading.textContent = 'Software Developer Full-Stack';
                 
             } else if (language === 'portuguese') {
                 home.textContent = 'Página Inicial';
@@ -104,7 +104,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 portfolio.textContent = 'Portfólio';
                 skills.textContent = 'Habilidades';
                 myArticles.textContent = 'Meus Artigos';
-                heading.textContent = 'Engenharia de Software Full-Stack';
+                heading.textContent = 'Desenvolvedora de Software Full-Stack';
             } else {
                 home.textContent = 'Select a language';
             }
