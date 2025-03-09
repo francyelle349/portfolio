@@ -8,7 +8,7 @@ function ThemeColor() {
     const offcanvas = document.querySelector('.offcanvas');
     
 
-   // Remove individual classes (style and icon name separately)
+   
    icon.classList.remove('far', 'fas', 'fa-moon');
 
    if (isDarkMode) {
@@ -28,6 +28,7 @@ function ThemeColor() {
         dropdownMenu.classList.add('dropdown-menu-dark');
 
         document.getElementById('dropdownMenuButton').style.color = 'white';
+        document.getElementById('home-heading').style.color = 'white';
 
        
 
@@ -53,6 +54,7 @@ function ThemeColor() {
         dropdownMenu.classList.remove('dropdown-menu-dark');
         
         document.getElementById('dropdownMenuButton').style.color = 'black';
+        document.getElementById('home-heading').style.color = 'black';
 
 
 
@@ -72,3 +74,40 @@ function ThemeColor() {
 const icon = document.getElementById('theme-icon');
 icon.addEventListener('click', ThemeColor);
 
+
+console.log("Script.js is loaded!");
+
+document.addEventListener('DOMContentLoaded', function() {
+    const items = document.querySelectorAll('.dropdown-item');
+    items.forEach(function(item) {
+        item.addEventListener('click', function(event) {
+            event.preventDefault();
+            const language = item.getAttribute('href').substring(1);
+            console.log("Clicked language:", language); 
+            const home = document.getElementById('home');
+            const about = document.getElementById('about');
+            const portfolio = document.getElementById('portfolio');
+            const skills = document.getElementById('skills');
+            const myArticles = document.getElementById('articles');
+            const heading = document.getElementById('heading');
+            if (language === 'english') {
+                home.textContent = 'Home';
+                about.textContent = 'About';
+                portfolio.textContent = 'Portfolio';
+                skills.textContent = 'Skills';
+                myArticles.textContent = 'articles';
+                heading.textContent = 'Full-Stack Software Engineer';
+                
+            } else if (language === 'portuguese') {
+                home.textContent = 'Página Inicial';
+                about.textContent = 'Sobre';
+                portfolio.textContent = 'Portfólio';
+                skills.textContent = 'Habilidades';
+                myArticles.textContent = 'Meus Artigos';
+                heading.textContent = 'Engenharia de Software Full-Stack';
+            } else {
+                home.textContent = 'Select a language';
+            }
+        });
+    });
+});
