@@ -1,4 +1,4 @@
- let isDarkMode = true;;
+ let isDarkMode = true;
 function ThemeColor() {
 
     // take the id
