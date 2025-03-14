@@ -1,122 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
-    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-  <link rel="stylesheet" href="script.js">
-  <title>Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <title>Portfolio Francyelle</title>
+    <link rel="stylesheet" href="script2.js">
+    <script src="script2.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
+<body>
 
-<body vh-100 overflow-hidden>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
+    <div id="header">
+        <div class="container">
+            <nav>
+               
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                 
+                </ul>
+            </nav>
 
-  <!-- navbar -->
-
-  <nav class="navbar navbar-expand-lg bg-light navbar-light fixed-top">
-
-    <div class="container">
-      <!--logo -->
-      <a class="navbar-brand" href="#"> <img src="iconHook.png" id="iconHook" alt=""></a>
-
-      <!--toggle bar-->
-      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-        aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="offcanvas offcanvas-end text-bg-light " tabindex="-1" id="offcanvasNavbar"
-        aria-labelledby="offcanvasNavbarLabel">
-
-        <div class="offcanvas-body">
-          <ul class="navbar-nav justify-content-center fs-5 flex-grow-1 pe-3">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#home" id="home">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#" id="about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#portfolio" id="portfolio">Portfolio</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="#skills" id="skills">Skills</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="#articles" id="articles">My Articles</a>
-            </li>
-
-          </ul>
-
-
-          <!-- languages and mode section-->
-
-          <div class="d-flex justify-content-center align-items-center gap-3">
-            <div class="dropdown">
-              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-                data-bs-toggle="dropdown" aria-expanded="false">
-                Language
-              </button>
-              <!-- Dropdown Menu -->
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <li><a class="dropdown-item" href="#english">English</a></li>
-
-                <li><a class="dropdown-item" href="#portuguese">Portuguese</a></li>
-
-              </ul>
+            <div class="header-text">
+               
+                <h1>Francyelle Souza</h1>
+                <p>Full-Stack Software Developer</p>
             </div>
-
-
-            <i id="theme-icon" class="far fa-moon"></i>
-
-
-          </div>
-
-
         </div>
 
-
-      </div>
     </div>
-  </nav>
+    <!-------about --------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+             
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p id="about-description">Full-Stack Software Developer with experience in mobile and web application development. My expertise includes Flutter for cross-platform app development, along with Java, Spring Boot, Docker, and databases, working with both SQL and NoSQL. I have experience with cloud-based development using Firebase. Additionally, I have experience implementing the BLoC pattern for state management in Flutter and integrating RESTful and third-party APIs to build scalable and high-performance applications</p>
 
-  <!-- navbar ends-->
+                 
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                       <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p> 
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>App Development</span><br> Making web/mobile applications</li>
 
-  <!-- home section-->
+                            <li><span>web Development </span><br> building web or app interfaces</li>
 
-  <div class="container mt-5 pt-5">
+                            <li><span>backend development</span><br> software development </li>
+                            
+                        </ul>
+                    </div>
 
-    <div class="row">
-      <div class="col themed-grid-col">
+                    <div class="tab-contents " id="experience">
+                        <ul>
+                            <li><span>projeto1</span><br> Making web/mobile applications</li>
 
-        <div id="home-heading">
-          <h1>Francyelle</h1>
-          <h1>Souza</h1>
-          <p id="heading"> Software Developer Full-Stack</p>
-      </div>
-      </div>
+                            <li><span>projeto2</span><br> building web or app interfaces</li>
 
-      <div class="col themed-grid-col"><img src="iconGirl.png" id="iconGirl" alt=""></div>
+                            <li><span>projeto3</span><br> software development </li>
+                            
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>ensino superior</span><br> instituto federal </li>
+
+                            <li><span>curso de java</span><br> curso de java POO 23 horas</li>
+
+                            <li><span> curso de inglês</span><br> curso de ingles </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
-  </div>
+    <!--portfolio -->
 
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">Portfolio</h1>
+            
+            <div class="work-list">
+                <div class="work">
+                    <img src="appRestaurante.png" alt="">
+                    <div class="layer">
+                        <h3>Restaurant Reservation App</h3>
+                        <p>cross-platform mobile app was developed for a restaurant/service business to streamline reservations, user management, and payments, ensuring a secure and user-friendly experience.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="termofacil.png" alt="">
+                    <div class="layer">
+                        <h3>Termo Fácil App</h3>
+                        <p>cross-platform mobile app was developed for a restaurant/service business to streamline reservations, user management, and payments, ensuring a secure and user-friendly experience.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
 
+                <div class="work">
+                    <img src="coffeeShop.png" alt="">
+                    <div class="layer">
+                        <h3>Coffee Shop Design Site</h3>
+                        <p>cross-platform mobile app was developed for a restaurant/service business to streamline reservations, user management, and payments, ensuring a secure and user-friendly experience.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
 
-
-
-
-
-
-  <script src="script.js"></script>
-
+        </div>
+    </div>
+    
+    
+    
 </body>
-
 </html>
