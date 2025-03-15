@@ -25,10 +25,33 @@ function opentab(tabname) {
 }
 
 
+
+
 document.addEventListener('DOMContentLoaded', () => {
     const scriptURL = GOOGLE_SCRIPT_URL;
     const form = document.forms['submit-to-google-sheet'];
     const submitButton = document.getElementById("buttonSubmit");
+
+    const imageContainer = document.getElementById('header');
+const images = [
+    'background10.jpg',
+    'background11.jpg',
+    'background.jpg'
+];
+let currentImageIndex = 0;
+
+function changeBackgroundImage() {
+    // Update the background image
+    imageContainer.style.backgroundImage = `url('${images[currentImageIndex]}')`;
+
+    // Move to the next image
+    currentImageIndex = (currentImageIndex + 1) % images.length;
+}
+
+// Change the background image every 3 seconds (3000 milliseconds)
+setInterval(changeBackgroundImage, 20000);
+
+changeBackgroundImage();
 
 
 
