@@ -7,6 +7,7 @@
     <title>Portfolio Francyelle</title>
     <link rel="stylesheet" href="script2.js">
     <script src="script2.js"></script>
+    <script src="mykey.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
@@ -39,42 +40,40 @@
              
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
-                    <p id="about-description">Full-Stack Software Developer with experience in mobile and web application development. My expertise includes Flutter for cross-platform app development, along with Java, Spring Boot, Docker, and databases, working with both SQL and NoSQL. I have experience with cloud-based development using Firebase. Additionally, I have experience implementing the BLoC pattern for state management in Flutter and integrating RESTful and third-party APIs to build scalable and high-performance applications</p>
+                    <p id="about-description">Full-Stack Software Developer with experience in mobile and web application development. My expertise includes Flutter for cross-platform app development, along with Java, Spring Boot, Docker, and databases, working with both SQL and NoSQL. I have experience with cloud-based development using Firebase. Additionally, I have experience implementing the BLoC pattern for state management in Flutter and integrating RESTful and third-party APIs to build scalable and high-performance applications.</p>
 
                  
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                       <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                   
                         <p class="tab-links" onclick="opentab('education')">Education</p> 
                     </div>
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
                             <li><span>Mobile Development</span><br> Making Mobile apps in Flutter</li>
 
-                            <li><span>Web Development </span><br> Building web sites</li>
+                            <li><span>Web Development </span><br> Building web sites with HTML,CSS, JavaScript, Bootstrap</li>
 
                             <li><span>Backend Development</span><br> Backend Solutions using Java, Spring Boot, PHP and Docker  </li>
+
+
+                            <li><span>Databases</span><br> Working with SQL and NoSQL </li>
+
+
+                            <li><span>Cloud Solutions</span><br> Working with Cloud solutions with Firebase </li>
                             
                         </ul>
                     </div>
 
-                    <div class="tab-contents " id="experience">
-                        <ul>
-                            <li><span> Web development </span><br> Making frontend </li>
-
-                            <li><span>Mobile Development</span><br> Building mobile solutions </li>
-
-                            <li><span>Backend Development</span><br> Making backend effective solutions </li>
-                            
-                        </ul>
-                    </div>
 
                     <div class="tab-contents" id="education">
                         <ul>
+
+                            <li><span>Bachelor of Science in Information Technology (BSIT)</span><br> Brazil Federal Institute </li>
                                   
-                            <li>English IT for Professionals</li>
-                            <li>Java - Object Oriented Programming</li>
-                            <li>Linux Course</li>
+                            <li><span>Udemy</span> <br> English IT for Professionals</li>
+                            <li> <Span>Udemy</Span> <br> Java - Object Oriented Programming</li>
+                            <li> <span>Udemy </span> <br> Linux Course </li>
                             
                         </ul>
                     </div>
@@ -136,8 +135,8 @@
                     <h1 class="sub-title">Contact me</h1>
                     <p><i class="fa-solid fa-paper-plane"></i> francyelle5849@gmail.com</p>
                     <div class="social-icons">
-                        <a href=""><i class="fa-brands fa-github"></i></a>
-                        <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://github.com/francyelle349"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/francyelle-souza-245968350/"><i class="fa-brands fa-linkedin-in"></i></a>
                         <p></p>
                     </div>
 
@@ -146,19 +145,37 @@
 
                 </div>
 
+                
+
                 <div class="contact-right">
-                    <form name="submit-to-google-sheet">
+                    <form name="submit-to-google-sheet" id="contact-form">
                         <input type="text" name="Name" placeholder="Your name" required>
                         <input type="email" name="Email" placeholder="Your email " required>
-                        <textarea name="Message" rows="6" placeholder="Your message"></textarea></textarea>
-                        <button class="button-27" type="submit">Submit</button>
+                        <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+                        <button class="button-27" type="submit" id="buttonSubmit">Submit</button>
                     </form>
+
+               
+
+                    <dialog >
+                        <h2>hello</h2>
+                        <p> mensagem enviada</p>
+                        <button id="bt">ok</button>
+                    </dialog>
+
+                    
                     
                 </div>
             </div>
         </div>
 
-    
+        <script src="script2.js"></script>
+       
+
+      
     
 </body>
+
+
+
 </html>

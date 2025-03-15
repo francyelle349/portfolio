@@ -1,3 +1,4 @@
+
 function opentab(tabname) {
     // Get all tab links and tab contents
     var tablinks = document.getElementsByClassName('tab-links');
@@ -24,12 +25,39 @@ function opentab(tabname) {
 }
 
 
-const scriptURL = 'https://script.google.com/macros/s/AKfycbxyO25e1rtYRU-C7DbVFy3x8KiZ-mGG6NpNS_fZ9fIMTPVuUqErp98O7__SOcsYBOLj/exec'
-const form = document.forms['submit-to-google-sheet']
+document.addEventListener('DOMContentLoaded', () => {
+    const scriptURL = GOOGLE_SCRIPT_URL;
+    const form = document.forms['submit-to-google-sheet'];
+    const submitButton = document.getElementById("buttonSubmit");
 
-form.addEventListener('submit', e => {
-  e.preventDefault()
-  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-    .then(response => console.log('Success!', response))
-    .catch(error => console.error('Error!', error.message))
-})
+
+
+
+
+
+
+
+    if (form) {
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    console.log('Success!', response);
+                    alert('Mensagem enviada com sucesso!');
+                    form.reset();
+                })
+                .catch(error => console.error('Error!', error.message)).finally(() => {
+
+                    submitButton.disabled = false;
+
+                });
+        });
+
+        form.dataset.listenerAdded = true;
+
+     
+
+    } else {
+        console.error('Form not found!');
+    }
+});
