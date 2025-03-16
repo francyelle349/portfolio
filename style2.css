@@ -237,7 +237,7 @@ nav ul li a:hover::after{
     flex-direction: column;
     padding: 0 40px;
     text-align: center;
-    font-size: 14px;
+    font-size: 20px;
     transition: height 0.5s;
 
 }
@@ -464,7 +464,7 @@ nav .fa-solid{
 
 .tab-contents ul li{
     list-style: none;
-   padding-left: 30px;
+   padding-left: 40px;
     margin-right: 90px;
     text-align: center;
     position: relative;
@@ -474,11 +474,15 @@ nav .fa-solid{
 
   /* portfolio */
 
+  #portfolio-title{
+    padding-left: 20px;
+  }
+
 .work-list{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 40px;
-    margin-top: 50px;
+    margin-top: 60px;
 
 
 }
@@ -507,7 +511,7 @@ nav .fa-solid{
     flex-direction: column;
     padding: 0 40px;
     text-align: center;
-    font-size: 10px;
+    font-size: 15px;
     transition: height 0.5s;
 
 }
