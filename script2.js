@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
 const images = [
     'background10.jpg',
     'background11.jpg',
-    'background.jpg'
+  
 ];
 let currentImageIndex = 0;
 
