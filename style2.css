@@ -599,7 +599,7 @@ nav .fa-solid{
 }
 
 .contact-title{
-    font-size: 30px;
+    font-size: 40px;
     font-weight: 600;
     color: #fff;
     padding-bottom: 10px;
@@ -608,6 +608,7 @@ nav .fa-solid{
     justify-content: center;
     align-items: center;
     height: 50px;
+   
 }
 
 .contact-left{
