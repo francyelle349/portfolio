@@ -585,10 +585,39 @@ nav .fa-solid{
 
 }
 
+
+.contact-title{
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    position: relative;
+    justify-content: start;
+    align-items: start;
+    height: 50px;
+}
+
+.contact-title{
+    font-size: 30px;
+    font-weight: 600;
+    color: #fff;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+
 .contact-left{
     flex-basis: 40%;
     padding-bottom: 10px;
-    
+    padding-left: 100px;
+    justify-content: center;
+  
+    align-items: center;
+    position: relative;
 }
 
 
@@ -684,6 +713,7 @@ form input,form textarea{
 
 .contact-right form{
     width: 100%;
+    padding-bottom: 20px;
 }
 
   
