@@ -64,9 +64,9 @@ section {
 .header p{
     padding-left: 700px;
     color: whitesmoke;
-    font-family: var( --font-logo);
+   
 
-    font-size: 1.5rem;
+    font-size: 18px;
 }
 
 nav{
