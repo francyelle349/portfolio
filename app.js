@@ -1,3 +1,32 @@
+
+
+    // Get all tab links and tab contents
+    var tablinks = document.getElementsByClassName('tab-links');
+    var tabcontents = document.getElementsByClassName('tab-contents');
+
+
+function opentab(tabname) {
+
+for(tablink of tablinks){
+    tablink.classList.remove('active-link');
+
+
+}
+
+for(tabcontent of tabcontents){
+    tabcontent.classList.remove('active-tab');
+}
+
+event.currentTarget.classList.add('active-link');
+document.getElementById(tabname).classList.add('active-tab');
+}
+
+
+
+
+
+
+
 document.addEventListener("DOMContentLoaded", () => {
     const observer = new IntersectionObserver((entries) => {
         console.log("Entries observed:", entries); // Debugging log
@@ -10,6 +39,8 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
     });
+
+    
     
     const hiddenElements = document.querySelectorAll('.hidden');
     console.log("Hidden elements found:", hiddenElements); // Debugging log

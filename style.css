@@ -227,7 +227,8 @@ nav ul li a:hover::after{
 
 #home{
 
-    background: linear-gradient(180deg, rgba(113,0,139,1) 37%, rgba(0,0,0,1) 80%, rgba(0,0,0,1) 100%);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 4%, rgba(156,43,226,0.4458158263305322) 87%, rgba(0,0,0,1) 100%);
+
 
 }
 
@@ -328,29 +329,128 @@ nav ul li a:hover::after{
     padding-bottom: 500px;
 }
 
+
+/*==============   Education section ================ */
+
+
+#education{
+    background: linear-gradient(180deg, rgba(0,0,0,1) 4%, rgba(116,43,226,0.4458158263305322) 87%, rgba(0,0,0,1) 100%);
+
+}
+
+
+
+
+.row{
+    display: flex;
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    
+    flex-wrap: wrap;
+}
+
+.about-col-1{
+    flex-basis: 35%;
+}
+
+.about-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+
+}
+
+.about-col-2 {
+    flex-basis: 60%;
+}
+
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    position: relative;
+
+}
+
+.tab-titles{
+    display: flex;
+    margin: 20px 50px;
+    text-align: center;
+  position: relative;
+  justify-content: center;
+  
+}
+
+#about-description{
+ 
+    position: relative;
+    padding: 20px;
+}
+
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+    margin-bottom: 20px;
+   
+   
+}
+
+
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background:#9d4edd ;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+
+}
+
+.tab-links.active-link::after{
+    width: 50%;
+
+}
+
+.tab-contents ul li{
+    list-style: none;
+    margin: 20px;
+    margin-right: 90px;
+    text-align: center;
+    position: relative;
+   
+    justify-content: center;
+}
+
+.tab-contents ul li span{
+    color: #a545ff;
+    font-size: 14px;
+}
+
+.tab-contents{
+    display: none;
+}
+
+.tab-contents.active-tab{
+    display: block;
+}
+
+
+
+
 /*==============   hero section ================ */
 
-#about{
-    padding: 0 500px 30px 800px;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
-    
-}
 
-#about h1 {
-    padding-bottom: 10px;
-}
-
-#skills{
+.skills, #skillSection{
     background: linear-gradient(180deg, rgba(0,0,0,1) 10%, rgba(106,0,130,1) 54%, rgba(0,0,0,1) 100%);
-
-}
-.skills{
-    background: transparent;
 
 }
 .skills .container{
@@ -364,7 +464,7 @@ nav ul li a:hover::after{
 
 
 }
-.skills .container .row{
+.skills .container .row2{
     display: grid;
     grid-template-columns: repeat(6,1fr);
     flex-wrap: wrap;
@@ -449,7 +549,7 @@ nav ul li a:hover::after{
 .layer{
     width: 100%;
     height: 0;
-    background: linear-gradient(rgb(0,0,0,0.6), rgb(255, 170, 255));
+     background: rgba(48, 12, 90, 0.5) ;
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -513,7 +613,7 @@ nav ul li a:hover::after{
     align-items: center;
     padding: 200px 500px;
 
-    background: #231123;
+    background: rgba(48, 12, 90, 0.2) ;
     border-radius: 100px;
    
 
@@ -532,8 +632,7 @@ form{
 
 form input, form textarea{
     padding: 1.25rem;
-    background: linear-gradient(27deg, rgba(113,0,139,1) 22%, rgba(165,69,255,1) 48%, rgba(255,255,255,1) 100%);
-
+    
     border-radius: 10px;
     color: rgb(0, 0, 0);
 }
@@ -558,14 +657,14 @@ textarea{
     height: 50px;
     text-align: center;
     line-height: 60px;
-    color: #000000;
+    color: #ffff;
     font-size: 24px;
 
     text-decoration: none;
 
     box-sizing: border-box;
 
-    background: linear-gradient(27deg, rgb(179, 0, 219) 22%, rgba(165,69,255,1) 48%, rgb(246, 175, 255) 100%);
+    background: rgba(197, 51, 255, 0.685) ;
     background-size: 400%;
     border-radius: 30px;
     z-index: 1;
@@ -629,6 +728,7 @@ textarea{
     justify-items: center;
     text-align: center;
     min-height: 2vh;
+    
     
 }
 
