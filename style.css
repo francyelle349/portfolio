@@ -445,7 +445,7 @@ nav ul li a:hover::after{
 
 
 
-/*==============   hero section ================ */
+/*==============   skills section ================ */
 
 
 
@@ -506,6 +506,10 @@ nav ul li a:hover::after{
     text-align: center;
     justify-content: center;
     padding-bottom: 50px;
+}
+
+.skillsMobile{
+    display: none ;
 }
 
 /*==============   project section ================ */
@@ -943,6 +947,81 @@ textarea{
     border-radius: 10px;
     
 }
+
+/*---------- skills section -----------*/
+
+#skills {
+    height: 0px;
+    color: white;
+    border: 1rem;
+    padding: 2rem;
+    width: 70%;
+    margin: auto;
+    display: none !important;
+    margin-top: 2rem;
+    flex-wrap: nowrap;
+  
+}
+
+.skillsMobile{
+
+ display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+
+}
+.skillsMobile h1{
+
+    display: flex;
+    flex-direction: column;
+    color: #e2e9f0;
+
+}
+
+.skillsMobile .containerMobile{
+    min-height: 500px;
+    display: flex;
+    height: 200px;
+    width: 200px;
+    flex-direction: column;
+    gap: 20px;
+    justify-content:center;
+    flex-wrap:wrap;
+
+
+   
+
+}
+
+.skillsMobile .containerMobile .box{
+    
+    height: 200px;
+    width: 200px;
+    background-color: aqua;
+    font-size: 40pt;
+  
+}
+
+.skillsMobile .containerMobile .bar {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  
+     
+  
+}
+
+.skillsMobile .containerMobile .bar .info{
+    width: 200px;
+    height: 30px;
+    border: 0.5px solid snow ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 
    
     
