@@ -35,6 +35,7 @@
     color: white;
 }
 body{
+    
     overflow-x: hidden;
 }
 html{
@@ -52,11 +53,12 @@ html{
 
 }
 section {
+    
     width: 100%;
     display: grid;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
+    min-height: 90vh;
 }
 
 /*==============   navbar ================ */
@@ -338,7 +340,15 @@ nav ul li a:hover::after{
 
 }
 
-
+#education .container2 h1{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    text-align: center;
+    justify-content: center;
+    padding: 50px 40px;
+    padding-right: 90px;
+}
 
 
 .row{
@@ -448,6 +458,13 @@ nav ul li a:hover::after{
 /*==============   skills section ================ */
 
 
+.skillsMobile{
+    display: none;
+    height: 0;
+    width: 0;
+    min-height:  5px;
+
+}
 
 .skills, #skillSection{
     background: linear-gradient(180deg, rgba(0,0,0,1) 10%, rgba(106,0,130,1) 54%, rgba(0,0,0,1) 100%);
@@ -511,8 +528,15 @@ nav ul li a:hover::after{
 .skillsMobile{
     display: none ;
 }
+#skillsMob{
 
+    min-height: 3px;
+
+}
 /*==============   project section ================ */
+
+
+
 
 #portfolio-title{
     position: relative;
@@ -553,21 +577,21 @@ nav ul li a:hover::after{
 .layer{
     width: 100%;
     height: 0;
-     background: rgba(48, 12, 90, 0.5) ;
+    background: linear-gradient(rgba(0,0,0,0.6), rgb(166, 18, 211));
     border-radius: 10px;
     position: absolute;
     left: 0;
     bottom: 0;
-
     overflow: hidden;
+    display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     padding: 0 40px;
     text-align: center;
-    padding-top: 70px;
     font-size: 20px;
     transition: height 0.5s;
+
 
     
 
@@ -619,7 +643,6 @@ nav ul li a:hover::after{
 
     background: rgba(48, 12, 90, 0.2) ;
     border-radius: 100px;
-   
 
     
 }
@@ -954,13 +977,22 @@ textarea{
     height: 0px;
     color: white;
     border: 1rem;
-    padding: 2rem;
+    display: flex;
     width: 70%;
     margin: auto;
     display: none !important;
     margin-top: 2rem;
     flex-wrap: nowrap;
+    min-height: 2px;
   
+}
+
+
+
+#skillsMob{
+
+    min-height: 90vh;
+
 }
 
 .skillsMobile{
@@ -970,6 +1002,9 @@ textarea{
     align-items: center;
     justify-content: center;
     gap: 30px;
+
+      
+    min-height:  90vh;
 
 }
 .skillsMobile h1{
